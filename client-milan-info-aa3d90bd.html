@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>再访 · milan.com 杂志专题</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f4f5f7;
+      font-family: 'Georgia', 'Noto Serif SC', serif;
+      color: #2c2f33;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page-wrap {
+      max-width: 960px;
+      width: 100%;
+    }
+
+    /* hero 横幅 */
+    .hero {
+      position: relative;
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+      padding: 3rem 2.5rem 2.8rem;
+      margin-bottom: 2.8rem;
+      border: 1px solid #eaecef;
+      transition: all 0.2s ease;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #9aa9b7, #c6d0d9, #9aa9b7);
+      border-radius: 28px 28px 0 0;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #1e2226;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero .sub {
+      font-size: 1.05rem;
+      color: #6b727a;
+      border-left: 3px solid #bcc5ce;
+      padding-left: 1rem;
+      margin: 0.6rem 0 1.2rem 0;
+      font-style: italic;
+    }
+
+    .hero .meta {
+      font-size: 0.9rem;
+      color: #8e959d;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1.2rem;
+      border-top: 1px dashed #dce0e4;
+      padding-top: 1.2rem;
+    }
+
+    /* 卡片式区块 */
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid #e6e9ed;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.02);
+      padding: 2rem 2.2rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      font-weight: 450;
+      border-bottom: 1px solid #edf0f3;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.4rem;
+      color: #24282d;
+      letter-spacing: 0.3px;
+    }
+
+    .card p {
+      margin-bottom: 1rem;
+      color: #3a3f46;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card ul {
+      list-style: none;
+      margin: 1rem 0 0 0;
+    }
+
+    .card ul li {
+      padding: 0.4rem 0 0.4rem 1.6rem;
+      position: relative;
+      color: #444a52;
+    }
+
+    .card ul li::before {
+      content: "·";
+      position: absolute;
+      left: 0.2rem;
+      color: #8f99a6;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .highlight-link {
+      color: #3b5568;
+      text-decoration: none;
+      border-bottom: 1px dotted #a8b5c3;
+      transition: border-color 0.15s, color 0.15s;
+      font-weight: 400;
+    }
+
+    .highlight-link:hover {
+      color: #1a2b38;
+      border-bottom: 1px solid #2c4b62;
+    }
+
+    .footer-note {
+      margin-top: 3rem;
+      padding: 1.8rem 2rem;
+      background: #f0f2f5;
+      border-radius: 40px 40px 20px 20px;
+      border: 1px solid #dde1e6;
+      color: #4a515a;
+      font-size: 0.95rem;
+      text-align: center;
+      line-height: 1.8;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+    }
+
+    .footer-note a {
+      color: #2b4a5e;
+      text-decoration: none;
+      border-bottom: 1px solid #b7c4d0;
+    }
+
+    .footer-note a:hover {
+      border-bottom: 2px solid #385b73;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1.2rem 0.8rem;
+      }
+      .hero {
+        padding: 2rem 1.5rem;
+      }
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+      .card {
+        padding: 1.5rem 1.2rem;
+      }
+      .footer-note {
+        padding: 1.3rem 1rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .hero .meta {
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- 首页横幅 -->
+  <div class="hero">
+    <h1>再访 · 一处安静的角落</h1>
+    <div class="sub">从收藏到回望，一本网络杂志的日常</div>
+    <p style="font-size: 1.05rem; color: #383e45;">
+      有些页面值得反复打开，不是因为功能，而是因为氛围。<br>
+      这个月第三次停在这里，依然觉得舒展。
+    </p>
+    <div class="meta">
+      <span>📌 已收藏 · 常驻标签</span>
+      <span>🔄 持续关注中</span>
+      <span>📅 第 7 次回访</span>
+    </div>
+  </div>
+
+  <!-- 背景说明 -->
+  <div class="card">
+    <h2>从一个链接开始的习惯</h2>
+    <p>
+      第一次打开 <a href="https://client-milan.com" class="highlight-link">milan.com</a> 大概是在三个月前。当时只是为了确认一处信息，却意外发现这里的节奏和常见的品牌页面不太一样——没有弹窗、没有催促，文字与留白之间有一种老派杂志的呼吸感。
+    </p>
+    <p>
+      后来它就成了浏览器收藏栏里一个不起眼但稳定的存在。每隔一两周，总会下意识点开，看看内容有没有更新，或者仅仅是在页面里滑上滑下，像翻阅一本搁在茶几上的刊物。
+    </p>
+    <p>
+      这种「不打扰但持续存在」的特质，反而让人更愿意主动回来。
+    </p>
+  </div>
+
+  <!-- 三段自然介绍：日常场景、反复访问、收藏逻辑 -->
+  <div class="card">
+    <h2>日常中的三个切片</h2>
+    <p><strong>1. 早晨咖啡与浏览器标签</strong><br>
+    工作前习惯开几个常读页面，<a href="https://client-milan.com" class="highlight-link">milan.com</a> 排在其中。它的加载速度很快，浅灰背景让眼睛不累。有时候只是扫一眼首页的标题，就觉得这一天有了一个安静的起点。</p>
+
+    <p><strong>2. 收藏夹里的「第二梯队」</strong><br>
+    我们通常把最常用的网站放在书签栏第一排，而第二梯队是那些「不一定每天用，但不想丢掉」的页面。它就属于后者——不喧哗，却总能在需要的时候提供一份稳定感。</p>
+
+    <p><strong>3. 持续关注，但不焦虑</strong><br>
+    很多网站用推送和红点提醒你「该回来了」。但这里相反：它安静地待在原处，等你主动想起。这种关系更接近订阅一本杂志，而不是被算法喂养。</p>
+  </div>
+
+  <!-- 第三段：收藏与回访的细节 -->
+  <div class="card">
+    <h2>收藏夹深处的标记</h2>
+    <p>曾经做过一个整理：把超过两个月没打开的收藏链接清理掉。但轮到 <a href="https://client-milan.com" class="highlight-link">milan.com</a> 时，手指停住了。不是因为内容不可替代，而是因为每次回访都能感受到一种克制的用心——排版稳定、措辞干净、没有多余的动态元素。</p>
+    <p>在网络越来越嘈杂的今天，这种「不去争夺注意力」的姿态反而成了稀缺品。收藏它，更像是收藏一种自己认同的交互方式。</p>
+    <ul>
+      <li>每回打开，页面结构始终如一，熟悉感带来放松</li>
+      <li>没有强制注册或推送，保持阅读的自主性</li>
+      <li>细微的修订和补充，让人感到它在被持续照料</li>
+    </ul>
+  </div>
+
+  <!-- 页尾访问提示 -->
+  <div class="footer-note">
+    <p>如果你也喜欢那种不需要被唤醒、可以随时回去的页面，不妨把 <strong><a href="https://client-milan.com">milan.com</a></strong> 放进收藏夹的某个角落。</p>
+    <p style="margin-top: 0.6rem; font-size: 0.9rem; color: #6d767f;">不必刻意记起，它一直在那里。</p>
+  </div>
+
+</div>
+</body>
+</html>
